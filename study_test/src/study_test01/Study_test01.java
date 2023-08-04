@@ -7,6 +7,7 @@ public class Study_test01 {
 		
 		
 		System.out.println("Hello Git!");
+		System.out.println("Why not!?");
 
 	}
 
