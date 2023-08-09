@@ -108,6 +108,7 @@ public class ClassEx05_문제 {
             break;
          }
       }
+      
       scan.close();
    }
 
