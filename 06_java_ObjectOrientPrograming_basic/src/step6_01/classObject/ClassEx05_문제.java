@@ -44,17 +44,71 @@ public class ClassEx05_문제 {
          // 메뉴 선택
          System.out.print("메뉴 선택 : ");
          int choice = scan.nextInt();
+         Ex05 e = new Ex05();
+         e.name = "메가 IT 고등학교";
          
-         if      (choice == 1) {}
-         else if (choice == 2) {}
-         else if (choice == 3) {}
-         else if (choice == 4) {}
+         
+         if      (choice == 1) {
+        	 int total = 0;
+        	 for (int i = 0; i < e.arScore.length; i++) {
+        		 total += e.arScore[i];
+        	 }
+        	 
+        	 double avg = (double)total / e.arHakbun.length;
+        	 System.out.println("전교생 수 = " + e.arScore.length + "명");
+             System.out.println("총점 = " + total + "점");
+             System.out.printf("평균 = %.1f점\n", avg);
+         }
+         else if (choice == 2) {
+        	 int MaxScore = 0;
+        	 int Index = 0;
+        	 for(int i = 0; i < e.arScore.length; i++) {
+        		 if(MaxScore < e.arScore[i]) {
+        			 MaxScore = e.arScore[i];
+        			 Index = i;
+        		 }
+        		 
+        	 }
+        	 System.out.println("=== 1등 ===");
+             System.out.println("학번 : " + e.arHakbun[Index]);
+             System.out.println("성적 : " + MaxScore);
+         }
+         else if (choice == 3) {
+        	 int minIdx = 0;
+        	 int minScore = e.arScore[0];
+        	 for (int i = 0; i < e.arScore.length; i++) {
+        		 if(minScore > e.arScore[i]) {
+        			 minScore = e.arScore[i];
+        			 minIdx = i;
+        		 }
+        	 }
+        	 System.out.println("=== 꼴등 ===");
+             System.out.println("학번 : " + e.arHakbun[minIdx]);
+             System.out.println("성적 : " + minScore);
+         }
+         else if (choice == 4) {
+        	 System.out.println("학번을 입력하세요 : ");
+        	 int hakbun = scan.nextInt();
+        	 
+        	 int check = -1;
+        	 for (int i = 0; i < e.arHakbun.length; i++) {
+        		 if(hakbun == e.arHakbun[i]) {
+        			 check = i;
+        		 }
+        	 }
+        	 if(check == -1) {
+        		 System.out.println("학번을 잘못 입력하셨습니다.");
+        	 }else {
+                 System.out.println(hakbun + "학번 학생의 성적은 " + e.arScore[check] + "점 입니다.");
+
+        	 }
+         }
          else if (choice == 5) {
             System.out.println("프로그램 종료");
             break;
          }
       }
-
+      scan.close();
    }
 
 }
