@@ -1,4 +1,5 @@
 package step6_02.method;
+import java.util.Arrays;
 //2023.08.09
 /*
 double[] values = {1.0, 1.1, 1.2};
@@ -67,25 +68,34 @@ class Ex09 {
 	
 	//문제 6)
 	void printScore3(int[] hakbuns, int[] scores) {
+		System.out.println("학생 리스트 : " + Arrays.toString(hakbuns));
+		
 		System.out.println("학번을 입력하세요 : ");
 		int hakbun = scan.nextInt();
-		int index = 0;
+		boolean is = false;
 		for (int i = 0; i < hakbuns.length; i++) {
 			if(hakbun == hakbuns[i]) {
-				index = i;
+				System.out.println(hakbun + "의 성적 : " + scores
+						[i]);
+				is = true;
 			}
 		}
-		int score;
-		for( int i = 0; i < scores.length; i++) {
-			if(index == i) {
-				score = scores[i];
-			}
+		if(is == false) {
+			System.out.println("없는 학번 입니다.");
 		}
-		
+		System.out.println();
 	}
 	
 	//문제 7)
-	void printNumberOne(int[] hakbuns, int[] scores) {}
+	void printNumberOne(int[] hakbuns, int[] scores) {
+		int Max  = 0;
+		for (int i = 0; i < scores.length; i++) {
+			if (Max < scores[i]) {
+				Max = scores[i];
+				System.out.println("1등 학생은 " + hakbuns[i] + "번 , " + Max + "점 입니다.");
+			}
+		}
+	}
 	
 }
 
