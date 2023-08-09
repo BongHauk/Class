@@ -41,9 +41,20 @@ class MethodType {
 		}
 	}
 	// 입력값은 없고 결과값은 있는 경우
+	double type01() {
+		return 3.141592;
+	}
+	
 	
 	// 입력값은 있고 결과값은 없는 경우
-	
+	int type11(String birthDate) {
+		
+		String temp = birthDate.substring(0, 4);
+		int age = 2023 - Integer.parseInt(temp) + 1;
+		
+		return age;
+		
+	}
 	
 }
 
@@ -63,9 +74,31 @@ public class MethodEx02 {
 		object.type10("팀 버너스 리.hwp");
 		object.type10("팀 버너스 리.pptx");
 		
+		// 에러 (파라메타의 타입이 일치해야만 한다)
+		//object.type10(1);
+		//object.type10(1.1);
+		//object.type10('c');
+		
+		// 에러 (파라메타의 개수가 일치해야만 한다)
+		//object.type10("제임스고슬링.txt" , "데니스리치.txt");
+		
 		// 입력값은 없고 결과값은 있는 경우
+		System.out.println("pi : " + object.type01());
+		double pi = object.type01();
+		System.out.println("pi : " + pi);
+		
 		
 		// 입력값은 있고 결과값은 없는 경우
+		System.out.println("나이 : " + object.type11("19800101") + "살");
+		
+		int age = object.type11("19900101");
+		System.out.println("나이 : " + age + "살");
+		
+		if(object.type11("20230101")==1) {
+			System.out.println("1살입니다.");
+		}
+
+		
    }
 
 }
