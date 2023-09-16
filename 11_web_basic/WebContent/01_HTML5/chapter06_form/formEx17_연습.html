@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제 연습</title>
+<!-- 
+	2023-09-11 회원가입 폼 만들기. 소요시간 : 20분 
+	어려운 것은 없지만 직접 해본적이 없어서 조금 찾아보면서 했다.
+	다시 한다면, 10분 내로 할 수 있을 듯 하다.
+ -->
+<body>
+    <form>
+		<legend>회원가입</legend>
+		<p>NAME : <input type="text"></p>
+		<p>ID : <input type="text" max="12">(아이디는 12자 이내로 입력하세요<button>중복확인</button>)</p>
+		<p>PASSWORD : <input type="password"></p>
+		<p>성별 : 
+			<input type="radio" name="gender" value="male" >남
+			<input type="radio" name="gender" value="female" >여
+		</p>
+		<p>사는 지역 : 
+			<select name="area">
+				<option>서울</option>
+				<option>인천</option>
+				<option>부산</option>
+				<option>제주</option>
+			</select>
+		</p>
+		<p>EMAIL : 
+			<input type="text" size="12">@<input type="text" size="12">
+			(이메일 수신 허용 <input type="radio" name="email" value="yes">허용<input type="radio" name="email" value="no">거부)
+		</p>
+		<p>JOP : 
+			<select name="jop">
+				<option>학생</option>
+				<option>군인</option>
+				<option>회사원</option>
+				<option>무직</option>
+			</select>
+		</p>
+		<p>자기소개<br>
+		<textarea rows="10" cols="50" name="textarea"></textarea>
+		</p>
+		<p><input type="submit"> <input type="button" value="취소"></p>
+	</form>
+</body>
+</html>
