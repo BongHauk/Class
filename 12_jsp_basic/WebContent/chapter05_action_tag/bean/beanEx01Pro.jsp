@@ -12,7 +12,6 @@
 	
 		request.setCharacterEncoding("utf-8");
 		
-	
 		ProductDTO bean1 = new ProductDTO();
 		bean1.setPdCd(request.getParameter("pdCd"));
 		bean1.setPdNm(request.getParameter("pdNm"));
