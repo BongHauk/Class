@@ -2,7 +2,7 @@ package step01_boardEx;
 
 import java.util.Date;
 
-// DTO(Data Transfer Object) : µ¥ÀÌÅÍ Àü¼Û ¸ğµ¨ °´Ã¼
+// DTO(Data Transfer Object) : ë°ì´í„° ì „ì†¡ ëª¨ë¸ ê°ì²´
 public class BoardDTO {
 
 	private long boardId;
