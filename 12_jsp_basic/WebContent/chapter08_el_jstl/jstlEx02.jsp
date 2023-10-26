@@ -64,10 +64,34 @@
 	
 	
 	<h3>2) when ~ otherwise 문  </h3>
+	<c:choose>
+		<c:when test="${grade ge 60 }">
+			<p>합격</p>
+		</c:when>
+		<c:otherwise>
+			<p>불합격</p>
+		</c:otherwise>
+	</c:choose>
+	
+	
 	<hr>
 	
 
 	<h3>3) when ~ when ~ otherwise 문  </h3>
+	<c:choose>
+		<c:when test="${grade ge 90 }">
+			<p>A</p>
+		</c:when>
+		<c:when test="${grade ge 80 }">
+			<p>B</p>
+		</c:when>
+		<c:when test="${grade ge 70 }">
+			<p>C</p>
+		</c:when>
+		<c:otherwise>
+			<p>F</p>
+		</c:otherwise>
+	</c:choose>
 	<hr>
 	
 </body>
