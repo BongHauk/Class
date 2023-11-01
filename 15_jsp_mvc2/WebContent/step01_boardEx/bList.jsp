@@ -26,10 +26,9 @@
 					<td>${boardDTO.writer }</td>
 					<td>${boardDTO.enrollDt }</td>
 					<td>${boardDTO.readCnt }</td>
-				</tr>	
-				<c:set var="boardIdx" value="${boardIdx = boardIdx + 1 }"/>
+				</tr>
+				<c:set var="boardIdx" value="${boardIdx = boardIdx + 1 }" />
 			</c:forEach>
-			
 			<tr align="right">
 				<td colspan="5">
 					<input type="button" style="float: right" value="글쓰기" onclick="location.href='bWrite'">

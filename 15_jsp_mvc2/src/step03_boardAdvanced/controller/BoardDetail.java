@@ -1,4 +1,4 @@
-package step01_board.controller;
+package step03_boardAdvanced.controller;
 
 import java.io.IOException;
 
@@ -9,26 +9,24 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import step01_board.dao.BoardDAO;
-import step01_board.dto.BoardDTO;
+import step03_boardAdvanced.dao.BoardAdvancedDAO;
 
-@WebServlet("/bDetail")
-public class DetailBoard extends HttpServlet {
+
+@WebServlet("/boardDetail")
+public class BoardDetail extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
-       
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		long boardId = Long.parseLong(request.getParameter("boardId"));
+		request.setAttribute("mainBoardDTO", BoardAdvancedDAO.getInstance().getBoardDetail(boardId));
+		request.setAttribute("allReplyCnt", BoardAdvancedDAO.getInstance().getAllReplyCnt(boardId));
+		request.setAttribute("replyList", BoardAdvancedDAO.getInstance().getReplyList(boardId));
 		
-		BoardDTO boardDTO = BoardDAO.getInstance().getBoardDetail(boardId);
-		//System.out.println(boardDTO);
-		
-		request.setAttribute("boardDTO" , boardDTO);
-		
-		RequestDispatcher dis = request.getRequestDispatcher("step01_boardEx/bDetail.jsp");
+		RequestDispatcher dis = request.getRequestDispatcher("step03_boardAdvancedEx/board/boardDetail.jsp");
 		dis.forward(request, response);
-		
+	
 	}
 
 }

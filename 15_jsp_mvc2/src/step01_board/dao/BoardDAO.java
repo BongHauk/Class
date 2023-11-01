@@ -166,6 +166,70 @@ public class BoardDAO {
 	}
 	
 	
+	public boolean checkAutorizedUser(BoardDTO boardDTO) {
+		
+		boolean isAuthorizedUser = false;
+		
+		try {
+			
+			getConnection();
+			
+			pstmt = conn.prepareStatement("SELECT * FROM BOARD WHERE BOARD_ID = ? AND PASSWORD = ?");
+			pstmt.setLong(1, boardDTO.getBoardId());
+			pstmt.setString(2, boardDTO.getPassword());
+			rs = pstmt.executeQuery();
+			
+			if (rs.next()) isAuthorizedUser = true;
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			getClose();
+		}
+		
+		
+		return isAuthorizedUser;
+		
+	}
+	
+	
+	public void updateBoard(BoardDTO boardDTO) {
+		
+		try {
+			
+			getConnection();
+			
+			pstmt = conn.prepareStatement("UPDATE BOARD SET SUBJECT = ? , CONTENT = ? WHERE BOARD_ID = ?");
+			pstmt.setString(1, boardDTO.getSubject());
+			pstmt.setString(2, boardDTO.getContent());
+			pstmt.setLong(3, boardDTO.getBoardId());
+			pstmt.executeUpdate();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			getClose();
+		}
+		
+	}
+	
+	
+	public void deleteBoard(long boardId) {
+		
+		try {
+			
+			getConnection();
+			pstmt = conn.prepareStatement("DELETE FROM BOARD WHERE BOARD_ID = ?");
+			pstmt.setLong(1, boardId);
+			pstmt.executeUpdate();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			getClose();
+		}
+		
+	}
 	
 	
 	
