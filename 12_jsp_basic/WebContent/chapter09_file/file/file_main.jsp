@@ -76,21 +76,21 @@
 	
 	<hr>
 	
-	<form>
+	<form action="delete" method="post">
 		<fieldset>
 		<legend>파일 삭제</legend>
-		   <p>삭제할 파일명 : <input type="text" ></p>
+		   <p>삭제할 파일명 : <input type="text" name="deleteFileName"></p>
 		   <input type="submit" value="삭제하기">
 		</fieldset>
 	</form>
 	
 	<hr>
 
-	<form >
+	<form action="update" method="post" enctype="multipart/form-data">
 		<fieldset>
 		<legend>파일 수정</legend>
-		   <p>삭제할 파일명 : <input type="text" ></p>
-		   <p>수정할 파일 : <input type="file" ></p>
+		   <p>삭제할 파일명 : <input type="text" name="deleteFileName"></p>
+		   <p>수정할 파일 : <input type="file" name="updateFile"></p>
 		   <input type="submit" value="수정하기">
 		</fieldset>
 	</form>
