@@ -25,7 +25,7 @@ public class Boss {
 	
 	
 	public void getError() {
-		System.out.println(1/1);
+		System.out.println(0/0);
 	}
 	
 }
