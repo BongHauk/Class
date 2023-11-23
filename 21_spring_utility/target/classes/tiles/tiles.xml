@@ -100,17 +100,17 @@
 	 	
 	 	<definition name="a"  extends="default">	
 	 		<put-attribute name="content" value="/WEB-INF/views/tiles/tilesEx/content1.jsp"/> <!-- 일반적으로 화면 본문 (content, body, main, article) -->	
-	 		<put-attribute name="속성명" value="화면제목"/>	
+	 		<put-attribute name="title" value="본문1"/>	
 	 	</definition>
 	 	
 	 	<definition name="b"  extends="default">	
 	 		<put-attribute name="content" value="/WEB-INF/views/tiles/tilesEx/content2.jsp"/>	
-	 		<put-attribute name="속성명" value="화면제목"/>	
+	 		<put-attribute name="title" value="본문2"/>	
 	 	</definition>
 	 	
 	 	<definition name="c"  extends="default">	
 	 		<put-attribute name="content" value="/WEB-INF/views/tiles/tilesEx/content3.jsp"/>	
-	 		<put-attribute name="속성명" value="화면제목"/>	
+	 		<put-attribute name="title" value="본문3"/>	
 	 	</definition>
 	 	
 </tiles-definitions>

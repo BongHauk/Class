@@ -2,9 +2,11 @@ package com.spring.utility.tiles;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
+@RequestMapping("/tiles") // 중복되는 경로는 Controller위에 url을 설정하여 코드의 중복을 줄일 수 있다.
 public class TilesController {
 
 	@GetMapping("/content1")
