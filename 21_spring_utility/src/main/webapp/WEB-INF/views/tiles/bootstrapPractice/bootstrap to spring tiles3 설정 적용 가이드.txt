@@ -1,0 +1,67 @@
+[ bootstrap To Spring Tiles3 설정 적용 가이드 ]
+
+	1) Tiles설정 작업을 진행한다. (pom.xml , servlet-context.xml , tiles설정파일)
+	
+		1-1) pom.xml
+		
+			<!--  tiles  -->
+			<dependency>
+		    	<groupId>org.apache.tiles</groupId>
+		    	<artifactId>tiles-core</artifactId>
+		    	<version>3.0.7</version>
+		    </dependency>
+		    <dependency>
+		    	<groupId>org.apache.tiles</groupId>
+		    	<artifactId>tiles-jsp</artifactId>
+		    	<version>3.0.7</version>
+		    </dependency>
+		    <dependency>
+		    	<groupId>org.apache.tiles</groupId>
+		    	<artifactId>tiles-servlet</artifactId>
+		    	<version>3.0.7</version>
+		    </dependency>
+	    
+	    1-2) servlet-context.xml
+	    
+		    <beans:bean id="urlBasedViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		        <beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" />
+		        <beans:property name="order" value="1" />	
+		    </beans:bean>
+		     
+		    <beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		        <beans:property name="definitions" value="classpath:tiles/*.xml" />	
+		    </beans:bean>
+		
+		1-3) bootstrap.xml 
+		
+			<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+			<tiles-definitions>
+				
+				<definition name="" template="">		
+			 		<put-attribute name="" value=""/>	
+			 	</definition>
+				
+				<definition name="" extends="">												
+					<put-attribute name="" value=""/> 					
+				</definition>
+	
+			</tiles-definitions>
+	
+	
+	2) 부트스트랩파일의 resources관련 자료들을 (css , javascript , image) webapp/resources폴더에 이동시킨다.
+	
+	3) layout파일들과 본문 파일들의 위치를 구별하여 놓는다.
+		레이아웃 폴더명 > layout
+		본문파일 폴더명 > contents
+		
+	4) 고정된 파일(layout,header,footer,side)들을 생성한다.
+	   ex) layout.jsp , header.jsp , footer.jsp , side.jsp
+	   
+	5) 메인화면 html 파일의 소스코드를 layout.jsp파일로 이동하고 화면 레이아웃 분할작업을 진행한다.
+	
+	6) 컨트롤러 , tiles설정파일에서 layout파일들과 본문파일의 연결 작업을 진행한다.
+	
+	7) resources관련 파일에 대한 경로들을 절대경로로 수정한다. (css , javascript , js , image , editor , 등등)
+	
+	8) 추가되는 본문파일들은 html에서 본문만 jsp파일로 이동하여 사용한다.
