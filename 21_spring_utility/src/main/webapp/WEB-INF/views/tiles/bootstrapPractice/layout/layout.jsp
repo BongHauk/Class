@@ -14,7 +14,7 @@
     <meta name="keywords" content="Ashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ashion | Template</title>
+    <title><tiles:insertAttribute name="title"/></title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
@@ -22,14 +22,17 @@
     rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="${contextPath }/resources/bootstrapTiles/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="${contextPath }/resources/bootstrapTiles/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="${contextPath }/resources/bootstrapTiles/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="${contextPath }/resources/bootstrapTiles/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="${contextPath }/resources/bootstrapTiles/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="${contextPath }/resources/bootstrapTiles/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="${contextPath }/resources/bootstrapTiles/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="${contextPath }/resources/bootstrapTiles/css/style.css" type="text/css">
+    
+    <!-- jQuery import구문은 본문 위에 위치한다. -->
+    <script src="${contextPath }/resources/bootstrapTiles/js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
@@ -52,7 +55,7 @@
             </a></li>
         </ul>
         <div class="offcanvas__logo">
-            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+            <a href="./index.html"><img src="${contextPath }/resources/bootstrapTiles/img/logo.png" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__auth">
@@ -86,16 +89,15 @@
 <!-- Search End -->
 
 <!-- Js Plugins -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/mixitup.min.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/jquery.slicknav.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.nicescroll.min.js"></script>
-<script src="js/main.js"></script>
+<script src="${contextPath }/resources/bootstrapTiles/js/bootstrap.min.js"></script>
+<script src="${contextPath }/resources/bootstrapTiles/js/jquery.magnific-popup.min.js"></script>
+<script src="${contextPath }/resources/bootstrapTiles/js/jquery-ui.min.js"></script>
+<script src="${contextPath }/resources/bootstrapTiles/js/mixitup.min.js"></script>
+<script src="${contextPath }/resources/bootstrapTiles/js/jquery.countdown.min.js"></script>
+<script src="${contextPath }/resources/bootstrapTiles/js/jquery.slicknav.js"></script>
+<script src="${contextPath }/resources/bootstrapTiles/js/owl.carousel.min.js"></script>
+<script src="${contextPath }/resources/bootstrapTiles/js/jquery.nicescroll.min.js"></script>
+<script src="${contextPath }/resources/bootstrapTiles/js/main.js"></script>
 </body>
 
 </html>

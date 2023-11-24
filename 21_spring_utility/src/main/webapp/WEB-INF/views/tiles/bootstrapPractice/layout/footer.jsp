@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath }"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,16 +16,16 @@
 	            <div class="col-lg-4 col-md-6 col-sm-7">
 	                <div class="footer__about">
 	                    <div class="footer__logo">
-	                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+	                        <a href="./index.html"><img src="${contextPath }/resources/bootstrapTiles/img/logo.png" alt=""></a>
 	                    </div>
 	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 	                    cilisis.</p>
 	                    <div class="footer__payment">
-	                        <a href="#"><img src="img/payment/payment-1.png" alt=""></a>
-	                        <a href="#"><img src="img/payment/payment-2.png" alt=""></a>
-	                        <a href="#"><img src="img/payment/payment-3.png" alt=""></a>
-	                        <a href="#"><img src="img/payment/payment-4.png" alt=""></a>
-	                        <a href="#"><img src="img/payment/payment-5.png" alt=""></a>
+	                        <a href="#"><img src="${contextPath }/resources/bootstrapTiles/img/payment/payment-1.png" alt=""></a>
+	                        <a href="#"><img src="${contextPath }/resources/bootstrapTiles/img/payment/payment-2.png" alt=""></a>
+	                        <a href="#"><img src="${contextPath }/resources/bootstrapTiles/img/payment/payment-3.png" alt=""></a>
+	                        <a href="#"><img src="${contextPath }/resources/bootstrapTiles/img/payment/payment-4.png" alt=""></a>
+	                        <a href="#"><img src="${contextPath }/resources/bootstrapTiles/img/payment/payment-5.png" alt=""></a>
 	                    </div>
 	                </div>
 	            </div>

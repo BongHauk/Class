@@ -8,8 +8,39 @@
  		<put-attribute name="footer" value="/WEB-INF/views/tiles/bootstrapPractice/layout/footer.jsp"/>	
  	</definition>
 	
-	<definition name="/a" extends="bootstrap">												
-		<put-attribute name="content" value="/WEB-INF/views/tiles/bootstrapPractice/contents/index.jsp"/> 					
+	<definition name="/bootstrap/index" extends="bootstrap">												
+		<put-attribute name="content" value="/WEB-INF/views/tiles/bootstrapPractice/content/index.jsp"/> 					
+		<put-attribute name="title" value="index"/> 					
+	</definition>
+	
+	<definition name="/bootstrap/blog" extends="bootstrap">												
+		<put-attribute name="content" value="/WEB-INF/views/tiles/bootstrapPractice/content/blog.jsp"/> 
+		<put-attribute name="title" value="blog"/> 					
+	</definition>
+	
+	<definition name="/bootstrap/shop" extends="bootstrap">												
+		<put-attribute name="content" value="/WEB-INF/views/tiles/bootstrapPractice/content/shop.jsp"/> 
+		<put-attribute name="title" value="shop"/>					
+	</definition>
+	
+	<definition name="/bootstrap/contact" extends="bootstrap">												
+		<put-attribute name="content" value="/WEB-INF/views/tiles/bootstrapPractice/content/contact.jsp"/>
+		<put-attribute name="title" value="contact"/> 					
+	</definition>
+	
+	<definition name="/bootstrap/product" extends="bootstrap">												
+		<put-attribute name="content" value="/WEB-INF/views/tiles/bootstrapPractice/content/product.jsp"/> 	
+		<put-attribute name="title" value="product"/>				
+	</definition>
+	
+	<definition name="/bootstrap/checkout" extends="bootstrap">												
+		<put-attribute name="content" value="/WEB-INF/views/tiles/bootstrapPractice/content/checkout.jsp"/> 	
+		<put-attribute name="title" value="checkout"/>				
+	</definition>
+	
+	<definition name="/bootstrap/cart" extends="bootstrap">												
+		<put-attribute name="content" value="/WEB-INF/views/tiles/bootstrapPractice/content/cart.jsp"/> 	
+		<put-attribute name="title" value="cart"/>				
 	</definition>
 	
 	
