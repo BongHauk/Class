@@ -48,7 +48,7 @@
 				
 				url : "${contextPath}/ajax/c2aEx02",
 				type : "get",
-				success : function() {
+				success : function(data) {
 					/*
 					
 						[형식]
@@ -57,6 +57,13 @@
 						
 					*/
 					console.log("--- DTO ---");
+					console.log(data.productCd);
+					console.log(data.productNm);
+					console.log(data.price);
+					console.log(data.deliveryPrice);
+					console.log(data.enrollDt);
+					console.log(data.brandCd);
+					console.log("");
 				}
 				
 			});
@@ -69,7 +76,7 @@
 					
 			$.ajax({
 				
-				url : "${contextPath}/ajax/c2aEx04",
+				url : "${contextPath}/ajax/c2aEx03",
 				type : "get",
 				success : function(data) {
 					
@@ -85,6 +92,16 @@
 					
 					console.log("--- DTO List ---");
 					
+					$(data).each(function(){
+						console.log(this.productCd);
+						console.log(this.productNm);
+						console.log(this.price);
+						console.log(this.deliveryPrice);
+						console.log(this.enrollDt);
+						console.log(this.brandCd);
+						console.log("");
+					});
+					
 				}
 				
 			});
@@ -96,7 +113,7 @@
 			
 			$.ajax({
 				
-				url : "${contextPath}/ajax/c2aEx03",
+				url : "${contextPath}/ajax/c2aEx04",
 				type : "get",
 				success : function(data) {
 					
@@ -108,6 +125,11 @@
 						
 					*/
 					console.log("--- map ---");
+					console.log(data.orderCd);
+					console.log(data.orderQty);
+					console.log(data.cartCd);
+					console.log(data.cartQty);
+					console.log("");
 					
 				}
 				
@@ -138,6 +160,13 @@
 					*/
 					console.log("--- map List ---");
 					
+					$(data).each(function(){
+						console.log(this.orderCd);
+						console.log(this.orderQty);
+						console.log(this.cartCd);
+						console.log(this.cartQty);
+						console.log("");
+					});
 				}
 				
 			});

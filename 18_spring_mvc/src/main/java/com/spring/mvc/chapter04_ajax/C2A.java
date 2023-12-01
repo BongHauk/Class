@@ -48,7 +48,8 @@ public class C2A {
 	
 	// (경우의 수 2) DTO return
 	@GetMapping("/c2aEx02")
-	public void c2aEx02() {
+	@ResponseBody
+	public ProductDTO c2aEx02() {
 		
 		ProductDTO productDTO = new ProductDTO();
 		productDTO.setProductCd(1);
@@ -58,12 +59,14 @@ public class C2A {
 		productDTO.setEnrollDt(new Date());
 		productDTO.setBrandCd("b1");
 		
+		return productDTO;
 	}
 	
 	
 	// (경우의 수 3) List<DTO> return
 	@GetMapping("/c2aEx03")
-	public void c2aEx03() {
+	@ResponseBody
+	public List<ProductDTO> c2aEx03() {
 		
 		List<ProductDTO> productList = new ArrayList<ProductDTO>();
 		
@@ -78,18 +81,23 @@ public class C2A {
 			productList.add(ProductDTO);
 		}
 		
+		return productList;
+		
 	}
 	
 	
 	// (경우의 수 4) Map return 
 	@GetMapping("/c2aEx04")
-	public void c2aEx04() {
+	@ResponseBody
+	public Map<String, Object> c2aEx04() {
 		
 		Map<String, Object> orderMap = new HashMap<String, Object>();
 		orderMap.put("orderCd"  , "order1");
 		orderMap.put("orderQty" , 2);
 		orderMap.put("cartCd"   , "cart3");
 		orderMap.put("cartQty"  , 4);
+		
+		return orderMap;
 		
 	}
 	
@@ -98,7 +106,8 @@ public class C2A {
 	
 	// (경우의 수 5) List<Map> return
 	@GetMapping("/c2aEx05")
-	public void c2aEx05() {
+	@ResponseBody
+	public List<Map<String, Object>> c2aEx05() {
 		
 		List<Map<String, Object>> orderMapList = new ArrayList<Map<String,Object>>();
 		
@@ -110,6 +119,8 @@ public class C2A {
 			orderMap.put("cartQty", i);
 			orderMapList.add(orderMap);
 		}
+		
+		return orderMapList;
 		
 		
 	}
