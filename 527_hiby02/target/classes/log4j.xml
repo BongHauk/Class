@@ -10,27 +10,62 @@
 		</layout>
 	</appender>
 	
+	<appender name="dailyFileAppender" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/Users/bonghaug/spring_mvc_log/spring_mvc_training_log" />
+		<layout class="org.apache.log4j.PatternLayout">
+		  <param name="DatePattern"         value="'.'yyyy-MM-dd"/>
+		  <param name="ConversionPattern"   value="[%d{HH:mm:ss}][%-5p](%F:%L)-%m%n"/>
+		</layout>
+	</appender>
+	
 	<!-- Application Loggers -->
-	<logger name="com.spring.yeni">
+	<logger name="com.spring.training">
 		<level value="info" />
 	</logger>
 	
 	<!-- 3rdparty Loggers -->
 	<logger name="org.springframework.core">
-		<level value="info" />
+		<level value="warn" />
 	</logger>
 	
 	<logger name="org.springframework.beans">
-		<level value="info" />
+		<level value="warn" />
 	</logger>
 	
 	<logger name="org.springframework.context">
-		<level value="info" />
+		<level value="warn" />
 	</logger>
 
 	<logger name="org.springframework.web">
-		<level value="info" />
+		<level value="warn" />
 	</logger>
+	
+	
+	<logger name="jdbc.sqltiming" additivity="false">
+		<level value="info" />
+		<appender-ref ref="console"/> 
+		<appender-ref ref="dailyFileAppender"/> 
+	</logger>
+	
+	<logger name="jdbc.sqlonly" additivity="false"> 
+		<level value="warn"/> 
+		<appender-ref ref="console"/> 
+	</logger>
+	
+	<logger name="jdbc.audit" additivity="false"> 
+		<level value="warn"/>  
+		<appender-ref ref="console"/> 
+	</logger> 
+    
+	<logger name="jdbc.resultset" additivity="false">
+		<level value="warn" />
+		<appender-ref ref="console"/> 
+	</logger>
+	
+	<logger name="jdbc.resultsettable" additivity="false"> 
+		<level value="warn"/>  
+		<appender-ref ref="console"/> 
+	</logger> 
 
 	<!-- Root Logger -->
 	<root>
