@@ -10,8 +10,17 @@
 		</layout>
 	</appender>
 	
+	<!-- DailyFile Appenders -->
+	<appender name="dailyFileAppender" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/Users/bonghaug/temp/test.txt" />
+		<layout class="org.apache.log4j.PatternLayout">
+		  <param name="DatePattern"   value="'.'yyyy-MM-dd-HH-mm"/>
+		  <param name="ConversionPattern"   value="[%d{HH:mm:ss}][%-5p](%F:%L)-%m%n"/>
+		</layout>
+	</appender>
+	
 	<!-- Application Loggers -->
-	<logger name="con.spring.yeni">
+	<logger name="com.application.ilshopms">
 		<level value="info" />
 	</logger>
 	
