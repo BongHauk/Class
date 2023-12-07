@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>  
+<%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %> 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <c:set var="contextPath"  value="${pageContext.request.contextPath}"  />
@@ -26,13 +26,13 @@
     <link rel="apple-touch-icon" href="${contextPath }/resources/bootstrap/images/apple-touch-icon.png">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="${contextPath }/resources/bootstrap/images/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${contextPath }/resources/bootstrap/css/bootstrap.min.css">
     <!-- Site CSS -->
-    <link rel="stylesheet" href="${contextPath }/resources/bootstrap/images/css/style.css">
+    <link rel="stylesheet" href="${contextPath }/resources/bootstrap/css/style.css">
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="${contextPath }/resources/bootstrap/images/css/responsive.css">
+    <link rel="stylesheet" href="${contextPath }/resources/bootstrap/css/responsive.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="${contextPath }/resources/bootstrap/images/css/custom.css">
+    <link rel="stylesheet" href="${contextPath }/resources/bootstrap/css/custom.css">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -43,7 +43,7 @@
 
 <body>
     <!-- Header Section Begin -->
-    	<tiles:insertAttribute name="header" />
+   	<tiles:insertAttribute name="header" />
     <!-- Header Section End -->
     
 
