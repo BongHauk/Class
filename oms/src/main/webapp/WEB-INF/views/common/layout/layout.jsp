@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="${contextPath }/resources/bootstrap/css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="${contextPath }/resources/bootstrap/css/custom.css">
+    
+    <script src="${contextPath }/resources/bootstrap/js/jquery-3.2.1.min.js"></script>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -64,7 +66,7 @@
     <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
 
     <!-- ALL JS FILES -->
-    <script src="${contextPath }/resources/bootstrap/js/jquery-3.2.1.min.js"></script>
+    
     <script src="${contextPath }/resources/bootstrap/js/popper.min.js"></script>
     <script src="${contextPath }/resources/bootstrap/js/bootstrap.min.js"></script>
     <!-- ALL PLUGINS -->

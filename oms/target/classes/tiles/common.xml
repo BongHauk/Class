@@ -3,15 +3,21 @@
 
 <tiles-definitions>
 
-	<definition name="baseLayout" 	   	template="/WEB-INF/views/common/layout/layout.jsp">		
-		<put-attribute name="header" 	value="/WEB-INF/views/common/layout/header.jsp"/>	
-		<put-attribute name="footer" 	value="/WEB-INF/views/common/layout/footer.jsp"/>	
+	<definition 		name="baseLayout" 	   	template="/WEB-INF/views/common/layout/layout.jsp">		
+		<put-attribute 	name="header" 			value="/WEB-INF/views/common/layout/header.jsp"/>	
+		<put-attribute 	name="footer" 			value="/WEB-INF/views/common/layout/footer.jsp"/>	
 	</definition>
 	
-	<definition name="/common/main"  extends="baseLayout">	
-		<put-attribute name="body" 	value="/WEB-INF/views/common/layout/main.jsp"/>	
-		<put-attribute name="title" value="HiByYeni"/>	
+	<definition 		name="/common/main"  	extends="baseLayout">	
+		<put-attribute 	name="body" 			value="/WEB-INF/views/common/layout/main.jsp"/>	
+		<put-attribute 	name="title" 			value="HiByYeni"/>	
 	</definition>
+	
+	<definition 		name="/common/about"  	extends="baseLayout">	
+		<put-attribute 	name="body" 			value="/WEB-INF/views/client/about.jsp"/>	
+		<put-attribute 	name="title" 			value="about"/>	
+	</definition>
+	
 	
 	
 	

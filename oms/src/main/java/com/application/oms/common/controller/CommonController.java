@@ -9,9 +9,9 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/yeni")
 public class CommonController {
 
-	@GetMapping("/main")
+	@GetMapping("/about")
 	public ModelAndView main() {
-		return new ModelAndView("/common/main"); 
+		return new ModelAndView("/common/about"); 
 	}
 	
 	
