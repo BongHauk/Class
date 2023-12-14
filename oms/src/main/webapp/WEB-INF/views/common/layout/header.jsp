@@ -27,17 +27,17 @@
                 </div>
                 <div class="our-link">
                     <ul>
-                        <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li>
+                        <li><a href="${contextPath }/myPage/myInfo?memberId=${sessionScope.memberId}"><i class="fa fa-user s_color"></i> My Account</a></li>
                         <li><a href="#"><i class="fas fa-location-arrow"></i> Our location</a></li>
-                        <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>
+                        <li><a href="${contextPath}/contact/addContact"><i class="fas fa-headset"></i> Contact Us</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 	<div class="login-box">
-		<select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
-			<option>Register Here</option>
-			<option>Sign In</option>
+		<select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In" onchange="location.href=(this.value);">
+			<option value="${contextPath }/member/register">Register Here</option>
+			<option value="${contextPath }/member/login">Sign In</option>
 		</select>
 	</div>
                 <div class="text-slid-box">
@@ -86,28 +86,25 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
-                <a class="navbar-brand" href="index.html"><img src="${contextPath }/resources/bootstrap/images/logo.png" class="logo" alt=""></a>
+                <a class="navbar-brand" href="${contextPath}/"><img src="${contextPath }/resources/bootstrap/images/Yeni_03.PNG" class="logo" alt=""></a>
             </div>
             <!-- End Header Navigation -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="${contextPath}/">홈</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">친구들</a></li>
                     <li class="dropdown">
-                        <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
+                        <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">마이페이지</a>
                         <ul class="dropdown-menu">
-				<li><a href="shop.html">Sidebar Shop</a></li>
-				<li><a href="shop-detail.html">Shop Detail</a></li>
-                            <li><a href="cart.html">Cart</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
-                            <li><a href="my-account.html">My Account</a></li>
-                            <li><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="my-account.html">내정보</a></li>
+                            <li><a href="cart.html">장바구니</a></li>
+                            <li><a href="checkout.html">주문정보</a></li>
+                            <li><a href="wishlist.html">찜목록</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">문의하기</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -120,7 +117,7 @@
 			<a href="#">
 				<i class="fa fa-shopping-bag"></i>
 				<span class="badge">3</span>
-				<p>My Cart</p>
+				<p>장바구니</p>
 			</a>
 		</li>
                 </ul>

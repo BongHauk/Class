@@ -23,8 +23,8 @@ public class CommonController {
 	@Autowired
 	private CommonService commonService;
 		
-	//private final String GOODS_IMAGE_REPO_PATH = "C:\\file_repo\\";					// window
-	private final String GOODS_IMAGE_REPO_PATH = "/Users/bonghaug/file_repo/";	// linux
+	private final String GOODS_IMAGE_REPO_PATH = "C:\\file_repo\\";					// window
+//	private final String GOODS_IMAGE_REPO_PATH = "/Users/bonghaug/file_repo/";	// linux
 	
 	
 	@GetMapping("/")
