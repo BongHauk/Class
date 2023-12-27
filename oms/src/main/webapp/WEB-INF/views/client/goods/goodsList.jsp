@@ -87,72 +87,72 @@
                                 <div class="accordion" id="accordionExample">
                                     <div class="card">
                                         <div class="card-heading active">
-                                            <a data-toggle="collapse" data-target="#collapseOne">New Books</a>
+                                            <a data-toggle="collapse" data-target="#collapseOne">신규상품</a>
                                         </div>
                                         <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
                                             <div class="card-body">
                                                 <ul>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=new&part=programming">Programming</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=new&part=network">Network</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=new&part=server">Server</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=new&part=cloud">Cloud</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=new&part=bigData">Big Data</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=new&part=artificialIntelligence">Artificial Intelligence</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=new&part=certificate">Certificate</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=new&part=programming">엽서</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=new&part=network">그립톡</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=new&part=server">달력</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=new&part=cloud">포스터</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=new&part=bigData">인형</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=new&part=artificialIntelligence">스티커</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=new&part=certificate">키링</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-heading">
-                                            <a data-toggle="collapse" data-target="#collapseTwo">Best Seller</a>
+                                            <a data-toggle="collapse" data-target="#collapseTwo">인기상품</a>
                                         </div>
                                         <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
                                             <div class="card-body">
                                                 <ul>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=best&part=programming">Programming</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=best&part=network">Network</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=best&part=server">Server</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=best&part=cloud">Cloud</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=best&part=bigData">Big Data</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=best&part=artificialIntelligence">Artificial Intelligence</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=best&part=certificate">Certificate</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=best&part=programming">엽서</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=best&part=network">그립톡</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=best&part=server">달력</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=best&part=cloud">포스터</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=best&part=bigData">인형</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=best&part=artificialIntelligence">스티커</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=best&part=certificate">키링</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-heading">
-                                            <a data-toggle="collapse" data-target="#collapseThree">Steady Seller</a>
+                                            <a data-toggle="collapse" data-target="#collapseThree">대표상품</a>
                                         </div>
                                         <div id="collapseThree" class="collapse" data-parent="#accordionExample">
                                             <div class="card-body">
                                                 <ul>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=steady&part=programming">Programming</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=steady&part=network">Network</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=steady&part=server">Server</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=steady&part=cloud">Cloud</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=steady&part=bigData">Big Data</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=steady&part=artificialIntelligence">Artificial Intelligence</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=steady&part=certificate">Certificate</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=steady&part=programming">엽서</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=steady&part=network">그립톡</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=steady&part=server">달력</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=steady&part=cloud">포스터</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=steady&part=bigData">인형</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=steady&part=artificialIntelligence">스티커</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=steady&part=certificate">키링</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-heading">
-                                            <a data-toggle="collapse" data-target="#collapseFour">General</a>
+                                            <a data-toggle="collapse" data-target="#collapseFour">일반상품</a>
                                         </div>
                                         <div id="collapseFour" class="collapse" data-parent="#accordionExample">
                                             <div class="card-body">
                                                 <ul>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=general&part=programming">Programming</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=general&part=network">Network</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=general&part=server">Server</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=general&part=cloud">Cloud</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=general&part=bigData">Big Data</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=general&part=artificialIntelligence">Artificial Intelligence</a></li>
-                                                    <li><a href="${contextPath }/goods/goodsList?sort=general&part=certificate">Certificate</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=general&part=programming">엽서</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=general&part=network">그립톡</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=general&part=server">달력</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=general&part=cloud">포스터</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=general&part=bigData">인형</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=general&part=artificialIntelligence">스티커</a></li>
+                                                    <li><a href="${contextPath }/goods/goodsList?sort=general&part=certificate">키링</a></li>
                                                 </ul>
                                             </div>
                                         </div>

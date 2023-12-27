@@ -100,7 +100,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="product__details__text">
-                        <h3>${goodsDTO.goodsNm } <span>출판사 : ${goodsDTO.publisher } | 저자 : ${goodsDTO.writer }</span></h3>
+                        <h3>${goodsDTO.goodsNm } <span>상호명 : ${goodsDTO.publisher } | 작가 : ${goodsDTO.writer }</span></h3>
                         <div class="product__details__price"><fmt:formatNumber value="${goodsDTO.price - (goodsDTO.price * goodsDTO.discountRate / 100)}" /><span><fmt:formatNumber value="${goodsDTO.price }"/></span></div>
                         <div class="product__details__button">
                             <div class="quantity">
@@ -115,7 +115,7 @@
                         <div class="product__details__widget">
                             <ul>
                                 <li>
-                                    <span>출판일 : </span>
+                                    <span>출시일 : </span>
                                     <p><fmt:formatDate value="${goodsDTO.publishedDt }" pattern="yyyy-MM-dd"/> </p>
                                 </li>
                                 <li>
@@ -143,7 +143,7 @@
                                     <p>${goodsDTO.stock } 개</p>
                                 </li>
                                 <li>
-                                    <span>ISBN : </span>
+                                    <span>상품번호 : </span>
                                     <p>${goodsDTO.isbn }</p>
                                 </li>
                             </ul>
@@ -154,19 +154,19 @@
                     <div class="product__details__tab">
                         <ul class="nav nav-tabs" role="tablist">
                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">상품소개</a>
+                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">상품소개(디테일)</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">상품목차</a>
+                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">상품소개</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">저자소개</a>
+                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">작가소개</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">출판사 상품평가</a>
+                                <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">운영자평</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">추천사</a>
+                                <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">메모</a>
                             </li>
                         </ul>
                         <div class="tab-content">

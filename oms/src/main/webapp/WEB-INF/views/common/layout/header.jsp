@@ -15,57 +15,62 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-	<div class="custom-select-box">
+				<div class="custom-select-box">
                     <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
-			<option>¥ JPY</option>
-			<option>$ USD</option>
-			<option>€ EUR</option>
-		</select>
+						<option>오밀이</option>
+						<option>조밀이</option>
+						<option>꼼이</option>
+						<option>쥐락이</option>
+					</select>
                 </div>
                 <div class="right-phone-box">
-                    <p>Call US :- <a href="#"> +11 900 800 100</a></p>
+                    <p>Call :- <a href="#"> 010 5610 2724</a></p>
                 </div>
                 <div class="our-link">
                     <ul>
-                        <li><a href="${contextPath }/myPage/myInfo?memberId=${sessionScope.memberId}"><i class="fa fa-user s_color"></i> My Account</a></li>
-                        <li><a href="#"><i class="fas fa-location-arrow"></i> Our location</a></li>
-                        <li><a href="${contextPath}/contact/addContact"><i class="fas fa-headset"></i> Contact Us</a></li>
+                        <li><a href="${contextPath }/myPage/myInfo?memberId=${sessionScope.memberId}"><i class="fa fa-user s_color"></i>내정보</a></li>
+                        <li><a href="${contextPath}/contact/addContact"><i class="fas fa-headset"></i>문의하기</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-	<div class="login-box">
-		<select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In" onchange="location.href=(this.value);">
-			<option value="${contextPath }/member/register">Register Here</option>
-			<option value="${contextPath }/member/login">Sign In</option>
-		</select>
-	</div>
+            
+				<div class="login-box">
+					<c:choose>
+                   		<c:when test="${sessionScope.memberId eq null }">
+	                        <div class="selectpicker show-tick form-control" style="background-color:#FFDC52;">
+	                            <a href="${contextPath }/member/login">Login</a>
+	                            /
+	                            <a href="${contextPath }/member/register">Register</a>
+	                        </div>
+                   		</c:when>
+                   		<c:otherwise>
+	                        <div class="selectpicker show-tick form-control" style="background-color:#FFDC52;">
+	                            <a href="${contextPath }/member/logout">logout</a>
+	                        </div>
+                   		</c:otherwise>
+                   	</c:choose>
+				</div>
                 <div class="text-slid-box">
                     <div id="offer-box" class="carouselTicker">
                         <ul class="offer-box">
                             <li>
-                                <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT80
+                                <i class="fab fa-opencart"></i> Hi.By_Yeni
                             </li>
                             <li>
-                                <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
+                                <i class="fab fa-opencart"></i> 어서오세요 반가워요
                             </li>
                             <li>
-                                <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
+                                <i class="fab fa-opencart"></i> 귀여운 친구들을 만나러 오셨군요
                             </li>
                             <li>
-                                <i class="fab fa-opencart"></i> Off 50%! Shop Now
+                                <i class="fab fa-opencart"></i> 오밀조밀 꼼쥐락
                             </li>
                             <li>
-                                <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
+                                <i class="fab fa-opencart"></i> 작고 귀여운 친구들과 함께 놀아요
                             </li>
                             <li>
-                                <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
-                            </li>
-                            <li>
-                                <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT30
-                            </li>
-                            <li>
-                                <i class="fab fa-opencart"></i> Off 50%! Shop Now 
+                                <i class="fab fa-opencart"></i> 기다리고 있을게요 
                             </li>
                         </ul>
                     </div>
@@ -94,79 +99,82 @@
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                     <li class="nav-item active"><a class="nav-link" href="${contextPath}/">홈</a></li>
-                    <li class="nav-item"><a class="nav-link" href="shop.html">친구들</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">마이페이지</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="my-account.html">내정보</a></li>
-                            <li><a href="cart.html">장바구니</a></li>
-                            <li><a href="checkout.html">주문정보</a></li>
-                            <li><a href="wishlist.html">찜목록</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us.html">문의하기</a></li>
+                    <li class="nav-item"><a class="nav-link" href="${contextPath }/goods/goodsList?sort=all&part=all">친구들</a></li>
+                    
+                    		<c:choose>
+                        		<c:when test="${sessionScope.role eq 'admin'}">
+		                             <li class="dropdown">
+		                             	<a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Management</a>
+		                                <ul class="dropdown-menu">
+	                        			 <li><a href="${contextPath }/admin/goods/adminGoodsList">Goods Management</a></li>
+	                        			 <li><a href="${contextPath }/admin/member/adminMemberList">User Management</a></li>
+	                        			 <li><a href="${contextPath }/admin/order/adminOrderList">Order Management</a></li>
+	                        			 <li><a href="${contextPath }/admin/contact/contactList">Contact Management</a></li>
+		                                </ul>
+		                             </li>
+                        		</c:when>
+                        		<c:otherwise>
+		                             <li class="dropdown">
+		                             	<a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">마이페이지</a>
+		                                <ul class="dropdown-menu">
+			                             <li><a href="${contextPath }/myPage/myInfo?memberId=${sessionScope.memberId}"><span class="icon_info"></span> My Info</a></li>
+			                             <li><a href="${contextPath }/myPage/myCartList"><span class="icon_cart"></span> My Cart</a></li>
+			                             <li><a href="${contextPath }/myPage/myOrderList"><span class="icon_chat_alt"></span> My Order</a></li>
+		                             	</ul>
+		                             </li>
+				                    <li >
+				                    	<a href="${contextPath}/contact/addContact" class="nav-link">문의하기</a>
+				                    </li>
+                        		</c:otherwise>
+                        	</c:choose>
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
 
             <!-- Start Atribute Navigation -->
             <div class="attr-nav">
-                <ul>
-                    <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                    <li class="side-menu">
-			<a href="#">
-				<i class="fa fa-shopping-bag"></i>
-				<span class="badge">3</span>
-				<p>장바구니</p>
-			</a>
-		</li>
+                <ul class="header__right__widget">
+                            <li class="side-menu">
+                            	<a href="${contextPath }/myPage/myCartList">
+                            		<i class="fa fa-shopping-bag"></i>
+	                                <c:choose>
+	                                	<c:when test="${sessionScope.role == 'client'}">
+			                                <span class="badge">${sessionScope.myCartCnt }</span>
+			                                <p>장바구니</p>
+	                                	</c:when>
+	                                	<c:otherwise>
+	                                		<span class="badge">0</span>
+	                                		<p>장바구니</p>
+	                                	</c:otherwise>
+	                                </c:choose>
+                            	</a>
+                            </li>
+                            <li>
+                            	<a href="${contextPath }/myPage/myOrderList">
+                            		<span class="icon_bag_alt"></span>
+                                 	<c:choose>
+                                		<c:when test="${sessionScope.role == 'client' }">
+		                                	<span class="badge">${sessionScope.myOrderCnt }</span>
+		                                	<p>주문</p>
+                                		</c:when>
+                                		<c:otherwise>
+                                			<span class="badge">0</span>
+                                			<p>주문</p>
+                                		</c:otherwise>
+                                	</c:choose>
+                            	</a>
+                           	</li>
                 </ul>
             </div>
             <!-- End Atribute Navigation -->
         </div>
-        <!-- Start Side Menu -->
-        <div class="side">
-            <a href="#" class="close-side"><i class="fa fa-times"></i></a>
-            <li class="cart-box">
-                <ul class="cart-list">
-                    <li>
-                        <a href="#" class="photo"><img src="${contextPath }/resources/bootstrap/images/img-pro-01.jpg" class="cart-thumb" alt="" /></a>
-                        <h6><a href="#">Delica omtantur </a></h6>
-                        <p>1x - <span class="price">$80.00</span></p>
-                    </li>
-                    <li>
-                        <a href="#" class="photo"><img src="${contextPath }/resources/bootstrap/images/img-pro-02.jpg" class="cart-thumb" alt="" /></a>
-                        <h6><a href="#">Omnes ocurreret</a></h6>
-                        <p>1x - <span class="price">$60.00</span></p>
-                    </li>
-                    <li>
-                        <a href="#" class="photo"><img src="${contextPath }/resources/bootstrap/images/img-pro-03.jpg" class="cart-thumb" alt="" /></a>
-                        <h6><a href="#">Agam facilisis</a></h6>
-                        <p>1x - <span class="price">$40.00</span></p>
-                    </li>
-                    <li class="total">
-                        <a href="#" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
-                        <span class="float-right"><strong>Total</strong>: $180.00</span>
-                    </li>
-                </ul>
-            </li>
-        </div>
-        <!-- End Side Menu -->
+        
     </nav>
     <!-- End Navigation -->
 </header>
 <!-- End Main Top -->
 
-<!-- Start Top Search -->
-<div class="top-search">
-    <div class="container">
-        <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-search"></i></span>
-            <input type="text" class="form-control" placeholder="Search">
-            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-        </div>
-    </div>
-</div>
-<!-- End Top Search -->
+
 </body>
 </html>

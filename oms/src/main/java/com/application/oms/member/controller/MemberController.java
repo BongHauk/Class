@@ -20,7 +20,6 @@ import com.application.oms.member.service.MemberService;
 @Controller
 @RequestMapping("/member")
 public class MemberController {
-	
 	@Autowired
 	private MemberService memberService;
 	
@@ -33,7 +32,7 @@ public class MemberController {
 	
 	@PostMapping("/register")
 	public ResponseEntity<Object> register(MemberDTO memberDTO , HttpServletRequest request) throws Exception {
-		
+		System.out.println("register post");
 		memberService.addMember(memberDTO);
 
 		String message  = "<script>";
@@ -63,6 +62,10 @@ public class MemberController {
 	
 	@PostMapping("/login")
 	public ResponseEntity<Object> login(MemberDTO memberDTO, HttpServletRequest request) throws Exception {
+		
+		System.out.println("********************************");
+		System.out.println("login");
+		System.out.println("********************************");
 		
 		String message = "";
 		if (memberService.login(memberDTO)) { 	

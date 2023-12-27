@@ -20,7 +20,7 @@
                     <div class="col-md-12">
                         <h1 class="m-b-20"><strong>Welcome To <br> Hi.by_Yeni</strong></h1>
                         <p class="m-b-40">오밀조밀 꼼쥐락 거리러 함께 가볼까요? <br> Shall we go and wiggle around together?</p>
-                        <p><a class="btn hvr-hover" href="#">친구들 만나러 가기</a></p>
+                        <p><a class="btn hvr-hover" href="${contextPath }/goods/goodsList?sort=all&part=all">친구들 만나러 가기</a></p>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                     <div class="col-md-12">
                         <h1 class="m-b-20"><strong>Welcome To <br> Hi.by_Yeni</strong></h1>
                         <p class="m-b-40">오밀조밀 꼼쥐락 거리러 함께 가볼까요? <br> Shall we go and wiggle around together?</p>
-                        <p><a class="btn hvr-hover" href="#">친구들 만나러 가기</a></p>
+                        <p><a class="btn hvr-hover" href="${contextPath }/goods/goodsList?sort=all&part=all">친구들 만나러 가기</a></p>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                     <div class="col-md-12">
                         <h1 class="m-b-20"><strong>Welcome To <br> Hi.by_Yeni</strong></h1>
                         <p class="m-b-40">오밀조밀 꼼쥐락 거리러 함께 가볼까요? <br> Shall we go and wiggle around together?</p>
-                        <p><a class="btn hvr-hover" href="#">친구들 만나러 가기</a></p>
+                        <p><a class="btn hvr-hover" href="${contextPath }/goods/goodsList?sort=all&part=all">친구들 만나러 가기</a></p>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="shop-cat-box">
-                    <img class="img-fluid" src="${contextPath }/resources/bootstrap/images/Yeni_02.PNG" alt="" />
+                    <img class="img-fluid" src="${contextPath }/resources/bootstrap/images/Yeni_05.JPG" alt="" />
                     <a class="btn hvr-hover" href="#">Lorem ipsum dolor</a>
                 </div>
             </div>
@@ -221,75 +221,5 @@
 </div>
 <!-- End Products  -->
 
-<!-- Start Blog  -->
-<div class="latest-blog">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="title-all text-center">
-                    <h1>latest blog</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus enim.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <div class="blog-box">
-                    <div class="blog-img">
-                        <img class="img-fluid" src="${contextPath }/resources/bootstrap/images/blog-img.jpg" alt="" />
-                    </div>
-                    <div class="blog-content">
-                        <div class="title-blog">
-                            <h3>Fusce in augue non nisi fringilla</h3>
-                            <p>Nulla ut urna egestas, porta libero id, suscipit orci. Quisque in lectus sit amet urna dignissim feugiat. Mauris molestie egestas pharetra. Ut finibus cursus nunc sed mollis. Praesent laoreet lacinia elit id lobortis.</p>
-                        </div>
-                        <ul class="option-blog">
-                            <li><a href="#"><i class="far fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-eye"></i></a></li>
-                            <li><a href="#"><i class="far fa-comments"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <div class="blog-box">
-                    <div class="blog-img">
-                        <img class="img-fluid" src="${contextPath }/resources/bootstrap/images/blog-img-01.jpg" alt="" />
-                    </div>
-                    <div class="blog-content">
-                        <div class="title-blog">
-                            <h3>Fusce in augue non nisi fringilla</h3>
-                            <p>Nulla ut urna egestas, porta libero id, suscipit orci. Quisque in lectus sit amet urna dignissim feugiat. Mauris molestie egestas pharetra. Ut finibus cursus nunc sed mollis. Praesent laoreet lacinia elit id lobortis.</p>
-                        </div>
-                        <ul class="option-blog">
-                            <li><a href="#"><i class="far fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-eye"></i></a></li>
-                            <li><a href="#"><i class="far fa-comments"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-4">
-                <div class="blog-box">
-                    <div class="blog-img">
-                        <img class="img-fluid" src="${contextPath }/resources/bootstrap/images/blog-img-02.jpg" alt="" />
-                    </div>
-                    <div class="blog-content">
-                        <div class="title-blog">
-                            <h3>Fusce in augue non nisi fringilla</h3>
-                            <p>Nulla ut urna egestas, porta libero id, suscipit orci. Quisque in lectus sit amet urna dignissim feugiat. Mauris molestie egestas pharetra. Ut finibus cursus nunc sed mollis. Praesent laoreet lacinia elit id lobortis.</p>
-                        </div>
-                        <ul class="option-blog">
-                            <li><a href="#"><i class="far fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fas fa-eye"></i></a></li>
-                            <li><a href="#"><i class="far fa-comments"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Blog  -->
 </body>
 </html>

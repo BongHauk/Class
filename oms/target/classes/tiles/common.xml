@@ -8,17 +8,10 @@
 		<put-attribute 	name="footer" 			value="/WEB-INF/views/common/layout/footer.jsp"/>	
 	</definition>
 	
-	<definition 		name="/common/main"  	extends="baseLayout">	
+	<definition 		name="/main"  	extends="baseLayout">	
 		<put-attribute 	name="body" 			value="/WEB-INF/views/common/layout/main.jsp"/>	
 		<put-attribute 	name="title" 			value="HiByYeni"/>	
 	</definition>
-	
-	<definition 		name="/common/about"  	extends="baseLayout">	
-		<put-attribute 	name="body" 			value="/WEB-INF/views/client/about.jsp"/>	
-		<put-attribute 	name="title" 			value="about"/>	
-	</definition>
-	
-	
 	
 	
 </tiles-definitions>

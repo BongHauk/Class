@@ -61,7 +61,7 @@
                             </div>
                             <div class="col-sm-12">
                                 <div class="checkout__form__input">
-                                    <p>출판사 <span>*</span></p>
+                                    <p>상호명 <span>*</span></p>
                                     <input type="text" name="publisher" value="${goodsDTO.publisher }">
                                 </div>
                             </div>
@@ -87,10 +87,10 @@
                                 <div class="checkout__form__input">
                                     <p>분류 <span>*</span></p>
                                       <select name="sort">
-                                    	<option value="general">일반</option>
-                                    	<option value="new">신간</option>
-                                    	<option value="best">베스트셀러</option>
-                                    	<option value="steady">스테디셀러</option>
+                                    	<option value="general">일반상품</option>
+                                    	<option value="new">신규상품</option>
+                                    	<option value="best">인기상품</option>
+                                    	<option value="steady">대표상품</option>
                                     </select>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="checkout__form__input">
-                                    <p>출판일 <span>*</span></p>
+                                    <p>출시일 <span>*</span></p>
                                     <input type="date" name="publishedDt" value='<fmt:formatDate value="${goodsDTO.publishedDt }" pattern="yyyy-MM-dd"/>'>
                                 </div>
                             </div>
@@ -114,7 +114,7 @@
                             </div>
                             <div class="col-sm-12">
                                 <div class="checkout__form__input">
-                                    <p>ISBN <span>*</span></p>
+                                    <p>상품번호 <span>*</span></p>
                                     <input type="text" name="isbn" value="${goodsDTO.isbn }">
                                 </div>
                             </div>
@@ -126,49 +126,49 @@
                             </div>
                            <div class="col-sm-6">
                                 <div class="checkout__form__input">
-                                    <p>분야<span>*</span></p>
+                                    <p>분류<span>*</span></p>
                                     <select name="part">
-                                    	<option value="programming">프로그래밍</option>
-                                    	<option value="network">네트워크</option>
-                                    	<option value="server">서버</option>
-                                    	<option value="cloud">클라우드</option>
-                                    	<option value="bigData">빅데이터</option>
-                                    	<option value="artificialIntelligence">인공지능</option>
-                                    	<option value="certificate">자격증</option>
+                                    	<option value="programming">엽서</option>
+                                    	<option value="network">그립톡</option>
+                                    	<option value="server">달력</option>
+                                    	<option value="cloud">포스터</option>
+                                    	<option value="bigData">인형</option>
+                                    	<option value="artificialIntelligence">스티커</option>
+                                    	<option value="certificate">키링</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="checkout__form__input">
-                                    <p>저자소개<span>*</span></p>
+                                    <p>작가소개<span>*</span></p>
                                     <textarea rows="5" cols="100" name="writerIntro">${goodsDTO.writerIntro }</textarea> 
                                		<script>CKEDITOR.replace("writerIntro");</script>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="checkout__form__input">
-                                    <p>상품목차<span>*</span></p>
+                                    <p>상품소개<span>*</span></p>
                                     <textarea rows="5" cols="100" name="contentsOrder" > ${goodsDTO.contentsOrder }</textarea> 
                                 	<script>CKEDITOR.replace("contentsOrder");</script>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="checkout__form__input">
-                                    <p>상품소개<span>*</span></p>
+                                    <p>상품소개(디테일)<span>*</span></p>
                                     <textarea rows="5" cols="100" name="intro">${goodsDTO.intro }</textarea> 
                                 	<script>CKEDITOR.replace("intro");</script>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="checkout__form__input">
-                                    <p>출판사평<span>*</span></p>
+                                    <p>운영자평<span>*</span></p>
                                     <textarea rows="5" cols="100" name="publisherComment" >${goodsDTO.publisherComment }</textarea> 
                                 	<script>CKEDITOR.replace("publisherComment");</script>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="checkout__form__input">
-                                    <p>추천사<span>*</span></p>
+                                    <p>메모<span>*</span></p>
                                     <textarea rows="5" cols="100" name="recommendation">${goodsDTO.recommendation }</textarea> 
                                 	<script>CKEDITOR.replace("recommendation");</script>
                                 </div>

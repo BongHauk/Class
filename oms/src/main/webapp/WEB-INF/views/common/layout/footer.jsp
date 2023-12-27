@@ -15,49 +15,9 @@
     <div class="main-instagram owl-carousel owl-theme">
         <div class="item">
             <div class="ins-inner-box">
-                <img src="${contextPath }/resources/bootstrap/images/instagram-img-01.jpg" alt="" />
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <img src="${contextPath }/resources/bootstrap/images/instagram-img-02.jpg" alt="" />
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <img src="${contextPath }/resources/bootstrap/images/instagram-img-03.jpg" alt="" />
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <img src="${contextPath }/resources/bootstrap/images/instagram-img-04.jpg" alt="" />
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <img src="${contextPath }/resources/bootstrap/images/instagram-img-05.jpg" alt="" />
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
                 <img src="${contextPath }/resources/bootstrap/images/instagram-img-06.jpg" alt="" />
                 <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/hi.by_yeni?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -65,7 +25,7 @@
             <div class="ins-inner-box">
                 <img src="${contextPath }/resources/bootstrap/images/instagram-img-07.jpg" alt="" />
                 <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/hi.by_yeni?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -73,7 +33,7 @@
             <div class="ins-inner-box">
                 <img src="${contextPath }/resources/bootstrap/images/instagram-img-08.jpg" alt="" />
                 <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/hi.by_yeni?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -81,7 +41,7 @@
             <div class="ins-inner-box">
                 <img src="${contextPath }/resources/bootstrap/images/instagram-img-09.jpg" alt="" />
                 <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/hi.by_yeni?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -89,7 +49,15 @@
             <div class="ins-inner-box">
                 <img src="${contextPath }/resources/bootstrap/images/instagram-img-05.jpg" alt="" />
                 <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/hi.by_yeni?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="${contextPath }/resources/bootstrap/images/instagram-img-06.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/hi.by_yeni?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -103,62 +71,23 @@
     <div class="footer-main">
         <div class="container">
 <div class="row">
-	<div class="col-lg-4 col-md-12 col-sm-12">
-		<div class="footer-top-box">
-			<h3>Business Time</h3>
-			<ul class="list-time">
-				<li>Monday - Friday: 08.00am to 05.00pm</li> <li>Saturday: 10.00am to 08.00pm</li> <li>Sunday: <span>Closed</span></li>
-			</ul>
-		</div>
-	</div>
-	<div class="col-lg-4 col-md-12 col-sm-12">
-		<div class="footer-top-box">
-			<h3>Newsletter</h3>
-			<form class="newsletter-box">
-				<div class="form-group">
-					<input class="" type="email" name="Email" placeholder="Email Address*" />
-					<i class="fa fa-envelope"></i>
-				</div>
-				<button class="btn hvr-hover" type="submit">Submit</button>
-			</form>
-		</div>
-	</div>
-	<div class="col-lg-4 col-md-12 col-sm-12">
-		<div class="footer-top-box">
-			<h3>Social Media</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<ul>
-                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
-                        </ul>
-		</div>
-	</div>
+	
 </div>
 <hr>
             <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12">
                     <div class="footer-widget">
-                        <h4>About Freshshop</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> 							
+                        <h4>About Hi.by_Yeni</h4>
+                        <p>안녕하세요.</p> 
+						<p>소개글입니다. </p> 							
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12">
                     <div class="footer-link">
-                        <h4>Information</h4>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Customer Service</a></li>
-                            <li><a href="#">Our Sitemap</a></li>
-                            <li><a href="#">Terms &amp; Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Delivery Information</a></li>
-                        </ul>
+                        <h4>Business Time</h4>
+                        <ul class="list-time">
+							<li>Monday - Friday: 08.00am to 05.00pm</li> <li>Saturday: 10.00am to 08.00pm</li> <li>Sunday: <span>Closed</span></li>
+						</ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12">
@@ -166,13 +95,13 @@
                         <h4>Contact Us</h4>
                         <ul>
                             <li>
-                                <p><i class="fas fa-map-marker-alt"></i>Address: Michael I. Days 3756 <br>Preston Street Wichita,<br> KS 67213 </p>
+                                <p><i class="fas fa-map-marker-alt"></i>Address: 경기도 <br>수원시,<br> 어딘가 </p>
                             </li>
                             <li>
-                                <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1-888 705 770</a></p>
+                                <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:01056102724">010 5610 2724</a></p>
                             </li>
                             <li>
-                                <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a></p>
+                                <p><i class="fas fa-envelope"></i>Email: <a href="mailto:hiby_yeni@naver.com">hiby_yeni@naver.com</a></p>
                             </li>
                         </ul>
                     </div>
